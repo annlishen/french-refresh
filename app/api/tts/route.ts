@@ -18,7 +18,13 @@ export async function POST(request: NextRequest) {
       speed || 1.0
     );
 
-    return new Response(audioBuffer, {
+    // Convert Buffer to ArrayBuffer for Response
+    const arrayBuffer = audioBuffer.buffer.slice(
+      audioBuffer.byteOffset,
+      audioBuffer.byteOffset + audioBuffer.byteLength
+    );
+
+    return new Response(arrayBuffer, {
       headers: {
         'Content-Type': 'audio/mpeg',
         'Content-Length': audioBuffer.length.toString(),
