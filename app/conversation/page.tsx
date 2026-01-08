@@ -294,7 +294,7 @@ export default function ConversationPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                  <span>Don't worry about making mistakes - that's how you learn!</span>
+                  <span>Don&apos;t worry about making mistakes - that&apos;s how you learn!</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>

@@ -218,7 +218,7 @@ export default function VocabularyPage() {
                         {currentCard.context_sentence && (
                           <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                             <p className="text-lg italic text-gray-700 dark:text-gray-300">
-                              "{currentCard.context_sentence}"
+                              &ldquo;{currentCard.context_sentence}&rdquo;
                             </p>
                           </div>
                         )}
@@ -365,7 +365,7 @@ export default function VocabularyPage() {
                     </p>
                     {card.context_sentence && (
                       <p className="text-sm text-gray-600 dark:text-gray-400 italic">
-                        "{card.context_sentence}"
+                        &ldquo;{card.context_sentence}&rdquo;
                       </p>
                     )}
                   </div>
